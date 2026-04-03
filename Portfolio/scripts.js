@@ -1,11 +1,10 @@
-//  <script>
-/* ── TYPED.JS ── */
+/*typed js */
 new Typed('#typed-text', {
     strings: ['Full Stack Developer', 'Java Backend Engineer', 'Python Developer', 'Spring Boot Enthusiast', 'Problem Solver', 'MCA Graduate'],
     loop: true, typeSpeed: 55, backSpeed: 28, backDelay: 1800
 });
 
-/* ── CURSOR ── */
+/*cursorr*/
 const cur = document.getElementById('cursor');
 const curR = document.getElementById('cursor-ring');
 let mx = 0, my = 0, rx = 0, ry = 0;
@@ -16,20 +15,20 @@ document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cu
     requestAnimationFrame(animCursor);
 })();
 
-/* ── SCROLL PROGRESS ── */
+/*scroll progress */
 const sp = document.getElementById('scroll-progress');
 window.addEventListener('scroll', () => {
     const h = document.documentElement.scrollHeight - window.innerHeight;
     sp.style.width = (window.scrollY / h * 100) + '%';
 });
 
-/* ── SCROLL REVEAL ── */
+/* scroll reveal*/
 const revObs = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: 0.1 });
 document.querySelectorAll('.reveal,.reveal-l,.reveal-r').forEach(el => revObs.observe(el));
 
-/* ── COUNTER ANIMATION ── */
+/* counter animation */
 const countObs = new IntersectionObserver(entries => {
     entries.forEach(e => {
         if (e.isIntersecting && !e.target.classList.contains('counted')) {
@@ -47,7 +46,7 @@ const countObs = new IntersectionObserver(entries => {
 }, { threshold: 0.6 });
 document.querySelectorAll('.astat-num[data-count]').forEach(el => countObs.observe(el));
 
-/* ── ACTIVE NAV ON SCROLL ── */
+/* active nav on click*/
 const sections = document.querySelectorAll('section[id]');
 const navAs = document.querySelectorAll('.nav-links a');
 window.addEventListener('scroll', () => {
@@ -56,17 +55,17 @@ window.addEventListener('scroll', () => {
     navAs.forEach(a => { a.classList.remove('active'); if (a.getAttribute('href') === '#' + current) a.classList.add('active'); });
 });
 
-/* ── MOBILE MENU ── */
+/* mobile menu*/
 document.getElementById('menu-btn').addEventListener('click', () => {
     document.getElementById('nav-links').classList.toggle('open');
 });
 
-/* ── BACK TO TOP ── */
+/*back to top */
 const btt = document.getElementById('btt');
 window.addEventListener('scroll', () => { btt.classList.toggle('show', window.scrollY > 400); });
 btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-/* ── CONTACT FORM ── */
+/* contact form*/
 document.getElementById('contactForm').addEventListener('submit', function (e) {
     e.preventDefault();
     const btn = document.getElementById('submitBtn');
@@ -83,7 +82,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     }, 1500);
 });
 
-/* ── CV DOWNLOAD ── */
+/*cv download */
 document.getElementById('cv-btn').addEventListener('click', e => {
     e.preventDefault();
     const toast = document.getElementById('toast');
@@ -93,8 +92,8 @@ document.getElementById('cv-btn').addEventListener('click', e => {
     setTimeout(() => toast.classList.remove('show'), 3500);
 });
 
-/* ── CLOSE NAV ON LINK CLICK ── */
+/* close nav on click*/
 document.querySelectorAll('.nav-links a').forEach(a => {
     a.addEventListener('click', () => document.getElementById('nav-links').classList.remove('open'));
 });
-    {/* </script> */}
+ 
