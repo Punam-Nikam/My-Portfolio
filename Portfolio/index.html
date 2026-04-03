@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punam Nikam — Full Stack Developer</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CURSOR -->
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- SCROLL PROGRESS -->
+    <div id="scroll-progress"></div>
+
+    <!-- BACKGROUND ORBS -->
+    <div class="bg-orbs">
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+    </div>
+
+    <!-- ═══════════════ NAVBAR ═══════════════ -->
+    <header class="navbar" id="navbar">
+        <div class="nav-logo"><span>Punam</span> Nikam<span style="color:var(--java)">.</span></div>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certificates</a></li>
+                <li><a href="#contact" class="nav-cta">Connect with Me</a></li>
+            </ul>
+        </nav>
+        <button class="menu-btn" id="menu-btn"><i class="fas fa-bars"></i></button>
+    </header>
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section id="home">
+        <div class="container">
+            <div class="hero-inner">
+                <!-- LEFT -->
+                <div class="hero-left">
+                    <div class="hero-greeting reveal">Hey, I'm</div>
+                    <h1 class="hero-name reveal delay-1">
+                        <span class="first">Punam</span><br>
+                        <span class="last">Nikam.</span>
+                    </h1>
+                    <div class="hero-role-wrap reveal delay-2">
+                        <span style="color:var(--muted);">I am a passionate </span><span id="typed-text"></span>
+                    </div>
+                    <p class="hero-desc reveal delay-2">MCA student &amp; full-stack developer building scalable backend
+                        systems and impactful web applications. Passionate about Java, Spring Boot, Python and solving
+                        real-world problems through elegant code.</p>
+                    <div class="hero-badges reveal delay-3">
+                        <span class="hbadge hb-o">Java Spring Boot</span>
+                        <span class="hbadge hb-b">React.js</span>
+                        <span class="hbadge hb-g">Python</span>
+                        <span class="hbadge hb-p">REST APIs</span>
+                        <span class="hbadge hb-t">PostgreSQL</span>
+                        <span class="hbadge hb-o">Microservices</span>
+                    </div>
+                    <div class="hero-btns reveal delay-3">
+                        <a href="#projects" class="btn btn-solid"><i class="fas fa-code"></i> View Projects</a>
+                        <a href="#contact" class="btn btn-ghost"><i class="fas fa-paper-plane"></i> Contact Me</a>
+                        <a href="#" class="btn btn-outline-w" id="cv-btn"><i class="fas fa-download"></i> Resume</a>
+                    </div>
+                    <div class="hero-socials reveal delay-4">
+                        <a href="https://github.com/Punam-Nikam" target="_blank" class="hsoc"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/punam-nikam01/" target="_blank" class="hsoc"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:punamnikam.835@gmail.com" class="hsoc"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="hsoc"><i class="fas fa-code"></i></a>
+                    </div>
+                </div>
+                <!-- RIGHT -->
+                <div class="hero-right reveal-r">
+                    <div class="avatar-wrap">
+                        <div class="avatar-ring2"></div>
+                        <div class="avatar-ring"></div>
+                        <div class="avatar-core">
+                            <div class="avatar-initials">PN</div>
+                        </div>
+                        <span class="float-chip chip1">☕ Java</span>
+                        <span class="float-chip chip2">⚛️ React</span>
+                        <span class="float-chip chip3">🍃 MongoDB</span>
+                        <span class="float-chip chip6">🐬MySQL</span>
+                        <span class="float-chip chip4">🐍 Python</span>
+                        <span class="float-chip chip5">🟨JavaScript</span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <div class="scroll-line"></div>
+                <span>scroll</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ ABOUT ═══════════════ -->
+    <section id="about">
+        <div class="container">
+            <div class="section-label">About Me</div>
+            <h2 class="section-title">Who I <span>Am</span></h2>
+            <div class="about-grid">
+                <div class="about-body reveal-l">
+                    <p>👩‍💻 I'm <strong>Punam Nikam</strong> — a passionate <span class="accent">MCA student</span> at
+                        MET's Institute of Management, BKC Adgaon, Nashik-422003, specializing in building robust backend architectures and
+                        user-friendly full-stack applications.</p>
+                    <p>🎯 I thrive at the intersection of <span class="accent">Java full stack </span>, Python, React,
+                        and cloud-ready systems. From AI-powered plant disease detection to enterprise-grade data leak
+                        prevention tools — I love building solutions that genuinely matter.</p>
+                    <p>🌟 When not coding, you'll find me exploring design trends, mentoring peers in DSA, contributing
+                        to open-source, or debugging something at 2 AM with coffee in hand.</p>
+                    <div class="about-stats-grid">
+                        <div class="astat reveal delay-1">
+                            <div class="astat-num" data-count="5">0</div>
+                            <div class="astat-label">Projects Built</div>
+                        </div>
+                        <div class="astat reveal delay-2">
+                            <div class="astat-num" data-count="3">0</div>
+                            <div class="astat-label">Databases Used</div>
+                        </div>
+                        <div class="astat reveal delay-3">
+                            <div class="astat-num" data-count="5">0</div>
+                            <div class="astat-label">Technologies</div>
+                        </div>
+                        <div class="astat reveal delay-4">
+                            <div class="astat-num" data-count="8.9">0</div>
+                            <div class="astat-label">CGPA Score (×10)</div>
+                        </div>
+                    </div>
+                    <div class="looking-badge">
+                        <div class="avail-dot-wrap">
+                            <div class="avail-dot"></div>
+                            <div class="avail-ping"></div>
+                        </div> Open to Opportunities
+                    </div>
+                </div>
+                <div class="about-right reveal-r">
+                    <div class="interest-card delay-1">
+                        <div class="int-icon o"><i class="fas fa-server"></i></div>
+                        <div>
+                            <div class="int-title">Backend Developer</div>
+                            <div class="int-desc">Building scalable backend application for real world problems.</div>
+                        </div>
+                    </div>
+                    <div class="interest-card delay-2">
+                        <div class="int-icon b"><i class="fas fa-laptop-code"></i></div>
+                        <div>
+                            <div class="int-title">Full Stack Development</div>
+                            <div class="int-desc">Bridging frontend React.js interfaces with robust backend systems to
+                                create seamless user experiences.</div>
+                        </div>
+                    </div>
+                    <div class="interest-card delay-3">
+                        <div class="int-icon g"><i class="fas fa-brain"></i></div>
+                        <div>
+                            <div class="int-title">AI / ML Integration</div>
+                            <div class="int-desc">Integrating ML models and AI APIs (Gemini, CNNs) into practical web
+                                applications like CropEye &amp; GreenEye.</div>
+                        </div>
+                    </div>
+                    <div class="interest-card delay-4">
+                        <div class="int-icon p"><i class="fas fa-shield-alt"></i></div>
+                        <div>
+                            <div class="int-title">Security &amp; Data Protection</div>
+                            <div class="int-desc">Enterprise-grade data leak prevention and audit trail systems — the
+                                backbone of TraceLock project.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ EDUCATION ═══════════════ -->
+    <section id="education">
+        <div class="container">
+            <div class="section-label">Academic Journey</div>
+            <h2 class="section-title">My <span>Education</span></h2>
+            <div class="timeline">
+                <div class="t-item reveal">
+                    <div class="t-dot"></div>
+                    <div class="t-card">
+                        <div class="t-date">2025 — 2027</div>
+                        <div class="t-degree">Master of Computer Applications (MCA)</div>
+                        <div class="t-school"><i class="fas fa-university" style="margin-right:.4rem;"></i>MET's Institute of Management, Bhujbal knowledge city, Adgaon Nashik</div>
+                        <div class="t-desc">Specialization in Advanced Java, Python, Advanced Web developement, Spring framework and Software Architecture.
+                            Key courses: Frontend, Design Patterns, Software Engineering, Machine Learning.</div>
+                        <span class="t-grade"><i class="fas fa-star"></i> CGPA: 9.9 / 10</span>
+                    </div>
+                </div>
+                <div class="t-item reveal delay-1">
+                    <div class="t-dot"></div>
+                    <div class="t-card">
+                        <div class="t-date">2022 — 2025</div>
+                        <div class="t-degree">BSC in Computer Science (Bsc.CS)</div>
+                        <div class="t-school"><i class="fas fa-graduation-cap"
+                                style="margin-right:.4rem;"></i>K.A.A.N.M.S.College Satana,Nashik under SPPU</div>
+                        <div class="t-desc">Graduated with Distinction. Core subjects: Data Structures &amp; Algorithms,
+                            Web Development, OOP with Java, Python Programming, Database Management Systems, Oprating systems, Data Science, Compiler Construction, Data analytics, Javascript, etc </div>
+                        <span class="t-grade"><i class="fas fa-award"></i> CGPA: 8.9 / 10 — Distinction</span>
+                    </div>
+                </div>
+                <div class="t-item reveal delay-2">
+                    <div class="t-dot" style="border-color:var(--blue);box-shadow:0 0 12px rgba(91,158,255,.5);"></div>
+                    <div class="t-card">
+                        <div class="t-date">2020 — 2022</div>
+                        <div class="t-degree">Higher Secondary &amp; Secondary (Science)</div>
+                        <div class="t-school"><i class="fas fa-school" style="margin-right:.4rem;"></i>Maharashtra State
+                            Board</div>
+                        <div class="t-desc"> Built foundational skills in
+                            mathematics, physics, and introductory programming.</div>
+                        <span class="t-grade"><i class="fas fa-check-circle"></i> HSC: 54.67% · SSC: 89.00%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ SKILLS ═══════════════ -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-label">What I Work With</div>
+            <h2 class="section-title">Technical <span>Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-cat reveal delay-1">
+                    <div class="skill-cat-head">
+                        <div class="scat-icon b"><i class="fab fa-react"></i></div>
+                        <div class="scat-title">Frontend Development</div>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="stag">React.js</span><span class="stag">Next.js</span><span
+                            class="stag">TypeScript</span>
+                        <span class="stag">CSS </span>
+                        <span class="stag">Bootstrap </span><span class="stag">JavaScript</span><span
+                            class="stag">HTML5</span><span class="stag">CSS3</span>
+                            <span class="stag">Angular</span>
+                    </div>
+                </div>
+                <div class="skill-cat reveal delay-2">
+                    <div class="skill-cat-head">
+                        <div class="scat-icon o"><i class="fas fa-server"></i></div>
+                        <div class="scat-title">Backend Development</div>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="stag">Java</span><span class="stag">Spring Boot</span><span class="stag">Hibernate
+                            / JPA</span>
+                        <span class="stag">Python</span><span class="stag">Django</span><span class="stag">Flask</span>
+                        <span class="stag">Node.js</span><span class="stag">REST APIs</span><span
+                            class="stag">Microservices</span>
+                    </div>
+                </div>
+                <div class="skill-cat reveal delay-3">
+                    <div class="skill-cat-head">
+                        <div class="scat-icon g"><i class="fas fa-database"></i></div>
+                        <div class="scat-title">Databases</div>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="stag">MySQL</span><span class="stag">PostgreSQL</span><span
+                            class="stag">MongoDB</span>
+                        <span class="stag">Firebase</span>
+                    </div>
+                </div>
+                <div class="skill-cat reveal delay-4">
+                    <div class="skill-cat-head">
+                        <div class="scat-icon p"><i class="fas fa-tools"></i></div>
+                        <div class="scat-title">Tools &amp; DevOps</div>
+                    </div>
+                    <div class="skill-tags">
+                      
+                      <span class="stag">VS Code</span>
+                      <span class="stag">Git / GitHub</span>
+                      <span class="stag">Linux</span>
+                      <span class="stag">IntelliJ IDEA</span>
+                        <span class="stag">Postman</span>
+                        <span class="stag">AWS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ PROJECTS ═══════════════ -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-label">What I've Built</div>
+            <h2 class="section-title">Featured <span>Projects</span></h2>
+            <div class="projects-grid">
+
+                <div class="pcard reveal delay-1">
+                    <div class="pcard-stripe s1"></div>
+                    <div class="pcard-top">
+                        <div class="pcard-icon-row">
+                            <div class="picon pi1"><i class="fas fa-leaf"></i></div>
+                            <span class="pcard-status pst-live">✓ Live</span>
+                        </div>
+                        <div class="pcard-title">CropEye — Plant Disease Detection</div>
+                        <div class="pcard-desc">AI-powered system that detects plant diseases via uploaded images using
+                            the Gemini API for analysis and suggests treatments via an integrated e-commerce interface. Real-time
+                            analysis with 95%+ accuracy.</div>
+                        <div class="pcard-tech">
+                            <span class="ptag">React.js</span><span class="ptag">Flask</span><span class="ptag">Gemini
+                                API</span><span class="ptag">MySQL</span><span class="ptag">Python</span>
+                        </div>
+                    </div>
+                    <div class="pcard-footer">
+                        <a href="https://github.com/Punam-Nikam/CropEye" target="_blank" class="plink pl-code"><i
+                                class="fab fa-github"></i> Code</a>
+                        <a href="#" class="plink pl-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+
+                
+                <div class="pcard reveal delay-3">
+                  <div class="pcard-stripe s3"></div>
+                  <div class="pcard-top">
+                    <div class="pcard-icon-row">
+                      <div class="picon pi3"><i class="fas fa-lock"></i></div>
+                      <span class="pcard-status pst-wip">⚡ In Progress</span>
+                    </div>
+                    <div class="pcard-title">TraceLock — Data Leak Prevention</div>
+                    <div class="pcard-desc">Enterprise-grade tool for tracking and preventing data leaks with
+                      digital watermarking, audit trails, and automated leaker identification. Built with Spring
+                      Boot microservices.</div>
+                      <div class="pcard-tech">
+                        <span class="ptag">React.js</span><span class="ptag">Spring Boot</span><span
+                        class="ptag">PostgreSQL</span><span class="ptag">JWT</span>
+                      </div>
+                    </div>
+                    <div class="pcard-footer">
+                      <a href="https://github.com/Punam-Nikam/TraceLock" target="_blank" class="plink pl-code"><i
+                        class="fab fa-github"></i> Code</a>
+                        <a href="#" class="plink pl-demo"><i class="fas fa-file-alt"></i> Case Study</a>
+                      </div>
+                    </div>
+
+                    
+                    <div class="pcard reveal delay-2">
+                        <div class="pcard-stripe s2"></div>
+                        <div class="pcard-top">
+                            <div class="pcard-icon-row">
+                                <div class="picon pi2"><i class="fas fa-comment-dots"></i></div>
+                                <span class="pcard-status pst-live">✓ Complete</span>
+                            </div>
+                            <div class="pcard-title">Comment Sentiment Analyzer</div>
+                            <div class="pcard-desc">AI-powered web application that analyzes user comments and provides
+                                sentiment analysis, emotion breakdown, and actionable feedback to dashboards in real time.</div>
+                            <div class="pcard-tech">
+                                <span class="ptag">Python</span><span class="ptag">Django</span><span
+                                    class="ptag">MongoDB</span><span class="ptag">NLP</span>
+                                    
+                            </div>
+                        </div>
+                        <div class="pcard-footer">
+                            <a href="https://github.com/Punam-Nikam/Comment_Analyzer" target="_blank"
+                                class="plink pl-code"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="plink pl-demo"><i class="fas fa-eye"></i> Preview</a>
+                        </div>
+                    </div>
+
+
+                <div class="pcard reveal delay-4">
+                    <div class="pcard-stripe s4"></div>
+                    <div class="pcard-top">
+                        <div class="pcard-icon-row">
+                            <div class="picon pi4"><i class="fas fa-chart-line"></i></div>
+                            <span class="pcard-status pst-live">✓ Complete</span>
+                        </div>
+                        <div class="pcard-title">GreenEye — ML Disease Detection</div>
+                        <div class="pcard-desc">ML-based plant disease detection system using Convolutional Neural
+                            Networks (CNN) achieving 92%+ accuracy, with integrated e-commerce for product
+                            recommendations.</div>
+                        <div class="pcard-tech">
+                            <span class="ptag">React.js</span><span class="ptag">CNN</span><span
+                                class="ptag">Flask</span><span class="ptag">MySQL</span><span
+                                class="ptag">TensorFlow</span>
+                        </div>
+                    </div>
+                    <div class="pcard-footer">
+                        <a href="https://github.com/Punam-Nikam/GreenEyee" target="_blank" class="plink pl-code"><i
+                                class="fab fa-github"></i> Code</a>
+                        <a href="#" class="plink pl-demo"><i class="fas fa-external-link-alt"></i> View Project</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ CERTIFICATIONS ═══════════════ -->
+    <section id="certifications">
+        <div class="container">
+            <div class="section-label">Credentials</div>
+            <h2 class="section-title">Certifications &amp; <span>Courses</span></h2>
+            <div class="certs-grid">
+                <div class="cert-card reveal delay-1">
+                    <div class="cert-badge"><i class="fas fa-check"></i></div>
+                    <div class="cert-icon">☕</div>
+                    <div class="cert-name">Java Foundation course</div>
+                    <div class="cert-by">Udemy · OOP, Collections, Multithreading</div>
+                </div>
+                <div class="cert-card reveal delay-2">
+                    <div class="cert-badge"><i class="fas fa-check"></i></div>
+                    <div class="cert-icon">🐍</div>
+                    <div class="cert-name">Python for Everybody Specialization</div>
+                    <div class="cert-by">Udemy</div>
+                </div>
+                <div class="cert-card reveal delay-3">
+                    <div class="cert-badge"><i class="fas fa-check"></i></div>
+                    <div class="cert-icon">🤖</div>
+                    <div class="cert-name">Chatgpt and Prompt Engineering</div>
+                    <div class="cert-by">Udemy</div>
+                </div>
+                <div class="cert-card reveal delay-3">
+                    <div class="cert-badge"><i class="fas fa-check"></i></div>
+                    <div class="cert-icon">🍃</div>
+                    <div class="cert-name">AWS Microservices</div>
+                    <div class="cert-by">LinkedIn Learning · Cloud Native</div>
+                </div>
+                <div class="cert-card reveal delay-1">
+                    <div class="cert-badge"><i class="fas fa-check"></i></div>
+                    <div class="cert-icon">🧮</div>
+                    <div class="cert-name">Data Structures &amp; Algorithms — Java</div>
+                    <div class="cert-by">GeeksforGeeks · 3+ Problems Solved</div>
+                </div>
+                <div class="cert-card reveal delay-2">
+                    <div class="cert-badge"><i class="fas fa-check"></i></div>
+                    <div class="cert-icon">⚛️</div>
+                    <div class="cert-name">Full Stack Web Dev (MERN Stack)</div>
+                    <div class="cert-by">Udemy · MongoDB, Express, React, Node</div>
+                </div>
+                <div class="cert-card reveal delay-3"
+                    style="background:rgba(248,152,32,.04);border-color:rgba(248,152,32,.2);">
+                    <div class="cert-icon">🏆</div>
+                    <div class="cert-name" style="color:var(--java);">learning Spring framework...</div>
+                    <div class="cert-by">Always learning, always growing</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ CONTACT ═══════════════ -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-label">Let's Talk</div>
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <div class="contact-grid">
+                <!-- LEFT -->
+                <div class="reveal-l">
+                    <div class="contact-info-card">
+                        <div class="ci-row">
+                            <div class="ci-icon o"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <div class="ci-label">Email</div>
+                                <div class="ci-val"><a
+                                        href="mailto:punamnikam.835@gmail.com">punamnikam.835@gmail.com</a></div>
+                            </div>
+                        </div>
+                        <div class="ci-row">
+                            <div class="ci-icon b"><i class="fab fa-linkedin-in"></i></div>
+                            <div>
+                                <div class="ci-label">LinkedIn</div>
+                                <div class="ci-val"><a href="https://linkedin.com/in/punam-nikam01/"
+                                        target="_blank">linkedin.com/in/punam-nikam01</a></div>
+                            </div>
+                        </div>
+                        <div class="ci-row">
+                            <div class="ci-icon g"><i class="fab fa-github"></i></div>
+                            <div>
+                                <div class="ci-label">GitHub</div>
+                                <div class="ci-val"><a href="https://github.com/Punam-Nikam"
+                                        target="_blank">github.com/Punam-Nikam</a></div>
+                            </div>
+                        </div>
+                        <div class="ci-row">
+                            <div class="ci-icon p"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <div class="ci-label">Location</div>
+                                <div class="ci-val">Nashik, Maharashtra, India</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="avail-bar">
+                        <div class="avail-dot-wrap">
+                            <div class="avail-dot"></div>
+                            <div class="avail-ping"></div>
+                        </div>
+                        <div>
+                            <div class="avail-text">Open to opportunities</div>
+                            <div class="avail-sub">Open to full-time, internships &amp; learnings</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- RIGHT — FORM -->
+                <div class="reveal-r">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <input type="text" class="finput" placeholder="Your Name" required>
+                            <input type="email" class="finput" placeholder="Your Email" required>
+                        </div>
+                        <input type="text" class="finput" placeholder="Subject">
+                        <textarea class="ftextarea" rows="5" placeholder="Tell me about your project or opportunity..."
+                            required></textarea>
+                        <button type="submit" class="form-submit" id="submitBtn">
+                            <i class="fas fa-paper-plane"></i>
+                            <span id="btnText">Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-logo">Punam Nikam<span style="color:var(--java);">.</span></div>
+            <div class="footer-copy">© 2026 Punam Nikam · Built with ☕ &amp; passion</div>
+            <div class="footer-socials">
+                <a href="https://github.com/Punam-Nikam" target="_blank" class="fsoc"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/punam-nikam01/" target="_blank" class="fsoc"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:punamnikam.835@gmail.com" class="fsoc"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button id="btt" title="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- TOAST -->
+    <div id="toast">
+        <div class="toast-icon"><i class="fas fa-check"></i></div>
+        <div>
+            <div class="toast-msg">Message sent! 🎉</div>
+            <div class="toast-sub">I'll get back to you within 24 hours.</div>
+        </div>
+    </div>
+
+    <!-- ═══════════════ SCRIPTS ═══════════════ -->
+     <script src="scripts.js"></script>
+   
+</body>
+
+</html>
