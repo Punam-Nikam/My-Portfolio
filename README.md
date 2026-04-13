@@ -1,4 +1,4 @@
-🚀 Punam Nikam – Developer Portfolio
+🚀 Punam Nikam – Developer Portfolio website
 
 A modern and responsive personal portfolio website showcasing my projects, skills, and journey as a Backend / full stack Developer.
 
